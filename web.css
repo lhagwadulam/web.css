@@ -1,0 +1,594 @@
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
+
+*{
+    font-family: "Chelsea Market", system-ui;
+    font-style: normal;
+}
+
+nav {
+    padding-left: 1%;
+    padding-right: 1%;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    background-color: white; 
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    padding: 5px 5px;
+    color: grey; 
+    text-decoration: none;
+}
+
+nav ul li a img {
+    vertical-align: middle; 
+    width: 50%;
+}
+
+nav ul li.separator {
+    vertical-align: middle;
+    height: 30px;
+    width: 1px;
+    opacity: .1;
+    background-color: #000;
+    margin: 0 1.2rem;
+}
+
+
+
+/* Slider button */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+  
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+  
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #6f3c2f;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+input:checked + .slider {
+    background-color: #e70;
+    
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px #e70;
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+  
+.slider.round {
+    border-radius: 34px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.switch {
+    vertical-align: middle;
+    transform: scale(0.75);
+}
+.Text1 {
+    color:#6f3c2f
+}
+.Text2 {
+    color: #e70;
+}
+
+
+
+
+/* Styling for the location button */
+.location-btn {
+    background-color:  #f5f5f5;
+    border:none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.location-btn:hover {
+    background-color: #f4f4f4;
+}
+
+.location-icon {
+    width: 10px;
+    height: 13px;
+    margin-right: 5px;
+    background-image: url('https://www.burgerking.in/static/media/location-restaurant.49a90e46.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Styling for the popup window */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -5%);
+    width: 800px;
+    height: 570px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    display: none;
+}
+
+.popup-content {
+    margin-top: 20px;
+}
+
+.popup-content button{
+    margin: 2%;
+}
+
+.close-btn {
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    cursor: pointer;
+    font-size: 24px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: none;
+    color: #999;
+}
+
+.search-container {
+    position: relative;
+}
+  
+.search-input {
+    padding-left:5%;
+    width: 55%;
+    height: 25px;
+    background-image: url('https://www.burgerking.in/static/media/search-black.3fb9f3e1.svg'); /* Replace with your search icon */
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 20px;
+    border-radius: 12px;
+}
+
+.confirm-location-btn {
+    background-color: orange; 
+    color: white;          
+    border: 1px solid #CCCCCC;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;    
+}
+
+/* Styling for the popup window */
+/*end*/
+  
+
+.nearby-stores img {
+    padding-right: 0.1%;
+    vertical-align: middle;
+    width: 11.4%;
+}
+
+.kings-deal img {
+    padding-right: 0.5%;
+    vertical-align: middle;
+    width: 14%;
+}
+
+.login img {
+    padding-right: 0.5%;
+    vertical-align: middle;
+    width: 21%;
+}
+
+.cart img {
+    padding-right: 0.5%;
+    vertical-align: middle;
+    width: 23%;
+}
+
+.search img {
+    vertical-align: middle;
+    width: 100%;
+}
+
+nav {
+    transform: scale(0.9);
+}
+
+
+
+
+section.food img.disclaimer {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+    width:750px;
+    max-width: 100%;
+    max-height: auto;
+    
+}
+
+.food {
+    padding-left: 8.1%;
+    padding-right: 8.1%;
+    font-weight: 700;
+    margin: auto;
+}
+
+.food .box {
+    width:14%;
+    align-items:center;
+    font-weight:575;
+}
+
+.food a {
+    display:flex;
+    text-align: center;
+
+}
+
+.our-menu {
+    display: flex;
+    justify-content:space-between;
+}
+
+.our-menu img {
+    box-shadow: 0 0 9px rgba(0,0,0,0.1);
+    width:80%;
+    border-radius: 5%;
+}
+
+
+.food2 {
+    padding-left: 8.1%;
+    padding-right: 8.1%;
+    font-weight: 700;
+    margin: auto;
+}
+
+.food2 .box {
+    max-width:33.33%;
+    align-items:center;
+    font-weight:575;
+}
+
+.our-menu2 {
+    display: flex;
+    justify-content:space-between;
+}
+
+.our-menu2 img {
+    box-shadow: 0 0 9px rgba(0,0,0,0.1);
+    width:80%;
+    border-radius: 5%;
+}
+
+
+.food3 {
+    padding-left: 8.1%;
+    padding-right: 8.1%;
+    font-weight: 700;
+    margin: auto;
+}
+
+.food3 .box {
+    max-width:33.33%;
+    align-items:center;
+    font-weight:575;
+}
+
+.our-menu3 img {
+    box-shadow: 0 0 9px rgba(0,0,0,0.1);
+    width:80%;
+    border-radius: 5%;
+}
+
+
+
+
+
+
+.bkspecial-btn {
+    display: flexbox;
+    justify-content:space-evenly;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 0;
+}
+  
+.bkspecials {
+    margin: 2%;
+    margin-left: 0;
+    background-color:  #ffffff;
+    border: none;
+    width: 40%;
+    height:175px;
+    max-height:10%;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+}
+
+.bkspecials .bpic {
+    width:37%;
+    height: 110%;
+}
+
+.bkspecials .bpic2 {
+    width:37%;
+    height: 110%;
+}
+  
+  
+.bkspecials .Right-part {
+    display:flexbox;
+    padding-left: 3%;
+    width:50%;
+}
+
+.bkspecials h4 {
+    color: grey;
+}
+  
+.bkspecials .bottom {
+    width:100%;
+    display: flex;
+    align-items: center;
+}
+  
+.bkspecials .bottom .price {
+    margin-right: 5%; 
+}
+  
+.bkspecials .bottom div {
+    color: #6f3c2f;
+    text-align: center;
+    width: 40%;
+    border-width:2px;
+    border-style:solid;
+    border-color:#6f3c2f;
+    border-radius:1000px;
+    padding: 7px;
+    margin-left: 20%;
+    margin-right: 5%;
+}
+  
+input[type="checkbox"] {
+    display: none;
+}
+
+.custom-checkbox-label {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid #999;
+    background-color: #fff;
+    cursor: pointer;
+    padding: 1%;
+}
+  
+input[type="checkbox"]:checked + .custom-checkbox-label {
+    border:2px solid #6f3c2f;
+    background-color:#e68a00
+}
+  
+.popupbk h5 {
+    font-size: medium;
+}
+  
+  
+  
+.bpic {
+    width: 30%;
+    height: 100%;
+    margin-right: 5px;
+    background-image: url('https://d1rgpf387mknul.cloudfront.net/products/Home/web/2x_web_20220221051131524344_262x360jpg');
+    background-size: cover;
+    border-radius: 5%;
+}
+  
+.bpic2 {
+    width: 30%;
+    height: 100%;
+    margin-right: 5px;
+    background-image: url('https://d1rgpf387mknul.cloudfront.net/products/Home/web/2x_web_20231020201725923395_262x360jpg');
+    background-size: cover;
+    border-radius: 5%;
+    
+}
+  
+/* Styling for the popup window */
+.popupbk {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    width: 45%;
+    height: 115%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    display: none;
+}
+  
+  
+  
+.close-btn {
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    cursor: pointer;
+    font-size: 24px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: none;
+    color: #999;
+}
+  
+.popupbk .select-size {
+    padding: 1%;
+    display: flex;
+}
+  
+.popupbk .select-size .size {
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    border-width:2px;
+    border-style:solid;
+    border-color:#6f3c2f;
+    border-radius:20px;
+}
+  
+.popupbk .select-size .size img {
+    width: 90%;
+  
+}
+  
+  
+.continue-btn {
+    background-color: orange; 
+    color: white;          
+    border: 1px solid #CCCCCC;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+
+}
+  
+
+.explore-more {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    background-color:#6f3c2f; 
+    color: white;
+    font-weight: 700;
+    font-size: larger;
+    border: 1px solid #CCCCCC;
+    border-radius: 25px;
+    padding: 12.5px 4%;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration:none ;
+}
+.bkwall {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer {
+    background-color: #323231;
+    margin: none;
+    border: 0;
+    padding: 0;
+    color: white;
+}
+
+footer a {
+    color: gray;
+    text-decoration: none;
+}
+
+.div1 {
+    display:flex;
+    margin:5%;
+}
+
+.div11 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.line {
+    height: 2px;
+    background-color: grey;
+    border: none;
+    width:90%;
+}
+
+
+.div2 {
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    align-items: center;
+}
+.div22 {
+    margin: auto;
+}
